@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/gradient_background"
+    android:layout_height="match_parent">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="393dp"
+        android:layout_height="654dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:layout_editor_absoluteX="2dp"
+            tools:layout_editor_absoluteY="-109dp">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="263dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="28dp"
+                android:text="Te damos la bienvenida"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="241dp"
+                android:layout_height="59dp"
+                android:layout_marginTop="12dp"
+                android:text="Aqui podras seleccionar la figura que estes deseando "
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.486"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <Spinner
+                android:id="@+id/spnFiguras"
+                android:layout_width="319dp"
+                android:layout_height="53dp"
+                android:layout_marginTop="152dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView5"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <RatingBar
+                android:id="@+id/rteleccion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.509"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtdescripcion"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <TextView
+                android:id="@+id/txtdescripcion"
+                android:layout_width="237dp"
+                android:layout_height="69dp"
+                android:layout_marginTop="16dp"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.487"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spnFiguras" />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="140dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="56dp"
+                android:onClick="Calculo"
+                android:text="Calcular"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.49"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rteleccion"
+                app:layout_constraintVertical_bias="0.033" />
+
+            <ImageView
+                android:id="@+id/figura1"
+                android:layout_width="154dp"
+                android:layout_height="130dp"
+                android:layout_marginBottom="64dp"
+                app:layout_constraintBottom_toBottomOf="@+id/spnFiguras"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.46"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/miss" />
+
+            <ImageView
+                android:id="@+id/figura2"
+                android:layout_width="154dp"
+                android:layout_height="130dp"
+                android:layout_marginBottom="64dp"
+                app:layout_constraintBottom_toBottomOf="@+id/spnFiguras"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.46"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/zero_two" />
+
+            <ImageView
+                android:id="@+id/figura3"
+                android:layout_width="154dp"
+                android:layout_height="130dp"
+                android:layout_marginBottom="64dp"
+                app:layout_constraintBottom_toBottomOf="@+id/spnFiguras"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.46"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/kirby" />
+
+            <ImageView
+                android:id="@+id/figura4"
+                android:layout_width="154dp"
+                android:layout_height="130dp"
+                android:layout_marginBottom="64dp"
+                app:layout_constraintBottom_toBottomOf="@+id/spnFiguras"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.46"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/aho" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
